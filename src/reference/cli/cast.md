@@ -59,8 +59,10 @@ Commands:
   help                   Print this message or the help of the given subcommand(s)
   implementation         Fetch the EIP-1967 implementation account [aliases: impl]
   index                  Compute the storage slot for an entry in a mapping [aliases: in]
+  index-erc7201          Compute storage slots as specified by `ERC-7201: Namespaced Storage
+                             Layout` [aliases: index7201, in7201]
   interface              Generate a Solidity interface from a given ABI [aliases: i]
-  keccak                 Hash arbitrary data using Keccak-256 [aliases: k]
+  keccak                 Hash arbitrary data using Keccak-256 [aliases: k, keccak256]
   logs                   Get logs by signature or topic [aliases: l]
   lookup-address         Perform an ENS reverse lookup [aliases: la]
   max-int                Prints the maximum value of the given integer type [aliases: --max-int,
@@ -108,6 +110,7 @@ Commands:
                              2u]
   to-unit                Convert an ETH amount into another unit (ether, gwei or wei) [aliases:
                              --to-unit, tun, 2un]
+  to-utf8                Convert hex data to a utf-8 string [aliases: --to-utf8, tu8, 2u8]
   to-wei                 Convert an ETH amount to wei [aliases: --to-wei, tw, 2w]
   tx                     Get information about a transaction [aliases: t]
   upload-signature       Upload the given signatures to https://openchain.xyz [aliases: ups]
