@@ -1,31 +1,23 @@
-# forge soldeer update
+# cast tx-pool
 
-Update dependencies by reading the config file
+Inspect the TxPool of a node
 
 ```bash
-$ forge soldeer update --help
+$ cast tx-pool --help
 ```
 
 ```txt
-Usage: forge soldeer update [OPTIONS]
+Usage: cast tx-pool [OPTIONS] <COMMAND>
+
+Commands:
+  content       Fetches the content of the transaction pool
+  content-from  Fetches the content of the transaction pool filtered by a
+                specific address
+  inspect       Fetches a textual summary of each transaction in the pool
+  status        Fetches the current status of the transaction pool
+  help          Print this message or the help of the given subcommand(s)
 
 Options:
-  -g, --regenerate-remappings
-          If set, this command will delete the existing remappings and re-create
-          them
-
-  -d, --recursive-deps
-          If set, this command will install the dependencies recursively (via
-          submodules or via soldeer)
-
-      --config-location <CONFIG_LOCATION>
-          Specify the config location without prompting.
-          
-          This prevents prompting the user if the automatic detection can't
-          determine the config location.
-          
-          [possible values: foundry, soldeer]
-
   -h, --help
           Print help (see a summary with '-h')
 
@@ -64,6 +56,4 @@ Display options:
           for failing tests.
           - 5 (-vvvvv): Print execution and setup traces for all tests,
           including storage changes.
-
-For more information, read the README.md
 ```

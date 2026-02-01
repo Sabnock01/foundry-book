@@ -1,31 +1,19 @@
-# forge soldeer update
+# cast 4byte-calldata
 
-Update dependencies by reading the config file
+Decode ABI-encoded calldata using <https://openchain.xyz>
 
 ```bash
-$ forge soldeer update --help
+$ cast 4byte-calldata --help
 ```
 
 ```txt
-Usage: forge soldeer update [OPTIONS]
+Usage: cast 4byte-calldata [OPTIONS] [CALLDATA]
+
+Arguments:
+  [CALLDATA]
+          The ABI-encoded calldata
 
 Options:
-  -g, --regenerate-remappings
-          If set, this command will delete the existing remappings and re-create
-          them
-
-  -d, --recursive-deps
-          If set, this command will install the dependencies recursively (via
-          submodules or via soldeer)
-
-      --config-location <CONFIG_LOCATION>
-          Specify the config location without prompting.
-          
-          This prevents prompting the user if the automatic detection can't
-          determine the config location.
-          
-          [possible values: foundry, soldeer]
-
   -h, --help
           Print help (see a summary with '-h')
 
@@ -64,6 +52,4 @@ Display options:
           for failing tests.
           - 5 (-vvvvv): Print execution and setup traces for all tests,
           including storage changes.
-
-For more information, read the README.md
 ```

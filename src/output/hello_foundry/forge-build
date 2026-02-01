@@ -3,8 +3,8 @@
 $ forge build
 // ANCHOR_END: command
 // ANCHOR: output
-Compiling 22 files with Solc 0.8.19
-Solc 0.8.19 finished in 561.77ms
+Compiling 23 files with Solc 0.8.19
+Solc 0.8.19 finished in 615.42ms
 Compiler run successful!
 // ANCHOR_END: output
 // ANCHOR_END: all

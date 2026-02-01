@@ -1,30 +1,27 @@
-# forge soldeer update
+# cast wallet remove
 
-Update dependencies by reading the config file
+Remove a wallet from the keystore.
 
 ```bash
-$ forge soldeer update --help
+$ cast wallet remove --help
 ```
 
 ```txt
-Usage: forge soldeer update [OPTIONS]
+Usage: cast wallet remove --name <NAME>
 
 Options:
-  -g, --regenerate-remappings
-          If set, this command will delete the existing remappings and re-create
-          them
+      --name <NAME>
+          The alias (or name) of the wallet to remove
 
-  -d, --recursive-deps
-          If set, this command will install the dependencies recursively (via
-          submodules or via soldeer)
+      --dir <DIR>
+          Optionally provide the keystore directory if not provided. default
+          directory will be used (~/.foundry/keystores)
 
-      --config-location <CONFIG_LOCATION>
-          Specify the config location without prompting.
+      --unsafe-password <PASSWORD>
+          Password for the JSON keystore in cleartext This is unsafe, we
+          recommend using the default hidden password prompt
           
-          This prevents prompting the user if the automatic detection can't
-          determine the config location.
-          
-          [possible values: foundry, soldeer]
+          [env: CAST_UNSAFE_PASSWORD=]
 
   -h, --help
           Print help (see a summary with '-h')
@@ -64,6 +61,4 @@ Display options:
           for failing tests.
           - 5 (-vvvvv): Print execution and setup traces for all tests,
           including storage changes.
-
-For more information, read the README.md
 ```
